@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página Inicial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html {
+              box-sizing: border-box;
+            }
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            .column {
+              float: left;
+              width: 33.3%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            .container {
+              padding: 0 16px;
+            }
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            .title {
+              color: grey;
+            }
+            .button {
+              border: none;
+              outline: 0;
+              display: inline-block;
+              padding: 8px;
+              color: white;
+              background-color: #000;
+              text-align: center;
+              cursor: pointer;
+              width: 100%;
+            }
+            .button:hover {
+              background-color: #555;
+            }
+        </style>
+    </head>
+    <body background="http://icbnews.com.br/wp-content/uploads/2015/07/background-site.jpg">
+        <h1 style="font-family:arial">Walter Lopes Frota Neto</h1>
+        <br>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+            <img src="http://www.abc.net.au/news/image/8314104-1x1-940x940.jpg" alt="Walter" style="width:100%">
+            <div class="container">
+            <h2 style="font-family:arial">Currículo Completo</h2>
+            <p style="font-family:arial" class="title">Estudante</p>
+            <p style="font-family:arial">Estudante de Engenharia de Software</p>
+            <p style="font-family:arial">walter.neto@ucsal.edu.br</p>
+            <p style="font-family:arial"><button onclick="location.href='\curriculocompleto.html'" class="button">Ir para o Currículo Completo</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+            <img src="http://www.highcountryconservation.org/wp-content/uploads/sites/16/2017/08/generic_image_missing-profile.jpg" alt="Walter2" style="width:100%">
+            <div class="container">
+            <h2 style="font-family:arial">Currículo Resumido</h2>
+            <p style="font-family:arial" class="title">Estudante</p>
+            <p style="font-family:arial">Estudante de Engenharia de Software</p>
+            <p style="font-family:arial">walter.neto@ucsal.edu.br</p>
+            <p style="font-family:arial"><button onclick="location.href='\curriculoresumido.html'" class="button">Ir para o Currículo Resumido</button></p>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
