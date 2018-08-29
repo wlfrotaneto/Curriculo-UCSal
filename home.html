@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Página Inicial</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             html {
               box-sizing: border-box;
@@ -13,7 +14,7 @@
             }
             .column {
               float: left;
-              width: 33.3%;
+              width: 20%;
               margin-bottom: 16px;
               padding: 0 8px;
             }
@@ -52,8 +53,19 @@
               background-color: #555;
             }
         </style>
+
     </head>
     <body background="http://icbnews.com.br/wp-content/uploads/2015/07/background-site.jpg">
+
+        <form action="/action_page.php" style="float: right; margin-right: 50px; margin-left: 45px; margin-top: 15px; margin-bottom: 50px">
+          <fieldset>
+            <legend>Enviar Comentário</legend>Nome:<br>
+            <input type="text" name="name"><br>Comentário:<br>
+            <input type="text" name="commentary"><br><br>
+            <input type="submit" value="Enviar">
+          </fieldset>
+        </form>
+
         <h1 style="font-family:arial">Walter Lopes Frota Neto</h1>
         <br>
         <div class="row">
